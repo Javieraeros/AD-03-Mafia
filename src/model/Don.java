@@ -3,10 +3,10 @@ package model;
 import javax.persistence.*;
 //ToDo hacer la clase con anotaciones y hacer también el mapeado
 @Entity
-@Table(name="Dons")
+@Table(name="dbo.Dons")
 public class Don {
 	@Id
-	@Column(name="ID")
+	@GeneratedValue
 	private int id;
 	
 	@Column(name="Nombre")
