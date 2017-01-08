@@ -24,7 +24,6 @@ public class Principal {
  
                 System.out.println("Insertando registro");
                 Transaction tx = session.beginTransaction();
-                Date fecha=new Date();
                 
                 Don javier=new Don(0,"Javier","Ruiz","El Pajas","Utrera");
         		System.out.println("Nombre:"+javier.getNombre());

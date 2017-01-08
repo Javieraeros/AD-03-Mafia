@@ -3,11 +3,13 @@ package model;
 import javax.persistence.*;
 //ToDo hacer la clase con anotaciones y hacer también el mapeado
 @Entity
-@Table(name="dbo.Dons")
+@Table(name="dbo.Dons")   //En mi casa necesito dbo
 public class Don {
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY) //Necesario para qeu el GBD me de el id
 	private int id;
+	
+	//http://stackoverflow.com/questions/32968527/hibernate-sequence-doesnt-exist
 	
 	@Column(name="Nombre")
 	private String nombre;
