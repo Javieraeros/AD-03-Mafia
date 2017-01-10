@@ -6,8 +6,8 @@
     <session-factory name="MafiaLocal">
         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
         <property name="hibernate.connection.password">123</property>
-        <property name="hibernate.connection.url">jdbc:sqlserver://JAVIER;</property>
-        <!-- <property name="hibernate.connection.url">jdbc:sqlserver://107-10:1433;</property> -->
+        <!-- <property name="hibernate.connection.url">jdbc:sqlserver://JAVIER;</property>-->
+        <property name="hibernate.connection.url">jdbc:sqlserver://107-10:1433;</property>
         <property name="hibernate.connection.username">prueba</property>
         <property name="hibernate.default_catalog">Ejemplos</property>
         <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
